@@ -19,8 +19,16 @@
     
     <section class="gallery" aria-label="Photo gallery">
      <ul id="gallery" class="gallery-grid"></ul>
+
     </section>
 
+    <dialog id="viewer" class="lightbox">
+        <button id="closeViewer" class="lightbox-close=" aria-label="close">&times;</button>
+        <img class="lightbox-img" id="viewerImage" alt="">
+        <button id="skipLeft" aria-label="left">←</button>
+         <button id="skipRight" aria-label="right">→</button>
+         <p id="imageCaption"></p>
+    </dialog>
 </main>
 
 <footer class="site-footer">
@@ -34,6 +42,6 @@
     </div>
 </footer>
 
-    
+    <script src="./script.js"></script>
 </body>
 </html>
