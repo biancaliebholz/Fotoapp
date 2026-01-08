@@ -103,6 +103,10 @@ p{
 
 }
 
+#viewerCount{
+  font-family: "Figtree";
+}
+
 .lightbox,
 #viewer {
   border: none;
@@ -131,6 +135,7 @@ p{
 
 #viewer{
   padding-bottom: 90px; 
+  overflow: visible;
 }
 
 
@@ -151,6 +156,7 @@ p{
   color: var(--text);
   display:flex;
   justify-content: space-between;
+  align-items: center;
 
 
   
@@ -309,14 +315,14 @@ box-shadow: 0 0 15px var(--bg);
     display: block;
 }
 #skipLeft, #skipRight{
-  height:60px;
-  width: 60px;
+  height:50px;
+  width: 50px;
   font-size: 30px;
 
 }
 #closeViewer{
-  height: 60px;
-  width:60px;
+  height: 50px;
+  width:50px;
   font-size: 30px;
 }
 p{
