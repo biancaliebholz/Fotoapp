@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fotogram</title>
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" type="image/png" href="./Capa_1.png">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
       <img src="./Capa_1.svg" alt="fotogram-logo">
     </header>
 
-<main class="site-main">
+<main id="main" class="site-main">
     
     <h1>Your personal photo album</h1>
     
@@ -23,12 +24,19 @@
     </section>
 
     <dialog id="viewer" class="lightbox">
-        <button id="closeViewer" class="lightbox-close=" aria-label="close">&times;</button>
-        <img class="lightbox-img" id="viewerImage" alt="">
-        <button id="skipLeft" aria-label="left">←</button>
-         <button id="skipRight" aria-label="right">→</button>
-         <p id="imageCaption"></p>
-    </dialog>
+     <div class="viewer-controls-up">  <p id="imagesCaption"></p>
+  <button id="closeViewer" aria-label="close">&times;</button>
+     </div>
+ 
+
+  <img class="lightbox-img" id="viewerImage" alt="">
+
+  <div class="viewer-controls-down" aria-label="navigation">
+    <button id="skipLeft" aria-label="left">←</button>
+    <span id="viewerCount" aria-label="image count">1/1</span>
+    <button id="skipRight" aria-label="right">→</button>
+  </div>
+</dialog>
 </main>
 
 <footer class="site-footer">
