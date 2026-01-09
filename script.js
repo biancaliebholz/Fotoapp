@@ -44,9 +44,14 @@ function renderImages() {
 function getHtml(i){
 return`
       <li>
-        <img onclick="openDialog(${i})"
-             src="./pics-komprimiert/${myImages[i].src}"
-             alt="${myImages[i].alt}">
+        <img
+          src="./pics-komprimiert/${myImages[i].src}"
+          alt="${myImages[i].alt}"
+          tabindex="0"
+          role="button"
+          onclick="openDialog(${i})"
+          onkeydown="if(event.key==='Enter' || event.key===' ') openDialog(${i})"
+        >
       </li>
     `;
 }
